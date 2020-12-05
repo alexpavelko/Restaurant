@@ -1,0 +1,49 @@
+body{ padding:0;margin:0;}
+nav ul{
+    display:flex;
+    list-style: none;
+    font-size: 14px;
+    font-family: "Sintony";
+    color: rgb(44, 70, 90);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.143;
+    align-items: center;
+    z-index: 118;
+}
+nav{
+    border:1px solid black;
+    
+}
+nav li{
+    margin-left: 50px;
+   
+}
+
+#book-table{
+    position: relative;
+    color: white;
+    border-color: rgb(254, 161, 0);;
+    border-radius: 4px;
+    background-color: rgb(254, 161, 0);
+
+    font-size: 14px;
+    font-family: "Sintony";
+    line-height: 2.143;
+
+    width: 199px;
+    height: 47px;
+    padding-left: 20px;
+    margin-left:140px;
+    background-image: url(img/header/button/button_line.jpg);
+
+    outline: 0;
+    z-index: 124;
+}
+
+#order{
+    position: absolute;
+    left:  10px;
+    color: rgb(254, 161, 0);
+    background-color: rgb(254, 161, 0);
+}
