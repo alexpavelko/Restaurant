@@ -1,0 +1,155 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.below-banner, .about-restourent p {
+  font-size: 14px;
+  font-family: "Sintony";
+}
+
+nav a {
+  color: #2c465a;
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+  font-family: "Sintony";
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 118;
+}
+
+nav li {
+  margin-left: 50px;
+}
+
+.first-article, .second-article {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  line-height: 0.75;
+  position: absolute;
+  z-index: 110;
+}
+
+.first-article {
+  top: 310.6px;
+  left: 400.563px;
+}
+
+.second-article {
+  top: 335.6px;
+  left: 405.563px;
+}
+
+.second-article span {
+  color: #fea100;
+}
+
+.top_button {
+  position: relative;
+  color: white;
+  border-color: #fea100;
+  border-radius: 4px;
+  background-color: #fea100;
+  font-size: "Sintony";
+  font-family: "Sintony";
+  line-height: 2.143;
+  width: 199px;
+  height: 47px;
+  padding-left: 20px;
+  margin-left: 140px;
+  background-image: url(../img/header/button/button_line.jpg);
+  outline: 0;
+  z-index: 124;
+}
+
+.small-image {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+}
+
+.below-banner {
+  background-color: #edf1f3;
+  width: 1970px;
+  height: 100px;
+}
+
+.below-banner img,
+.below-banner h3,
+.below-banner h4 {
+  position: absolute;
+}
+
+.below-banner img {
+  left: 818.937px;
+  top: 706.247px;
+}
+
+.below-banner h3,
+.below-banner h4,
+.below-banner h1 {
+  color: #14141d;
+  font-weight: bold;
+  top: 685.247px;
+  left: 888.937px;
+}
+
+.below-banner h3 {
+  top: 706.247px;
+  color: #fea100;
+}
+
+.below-banner h1 {
+  font-size: 32px;
+  font-family: "Playfair Display";
+  position: absolute;
+  left: 1070.084px;
+  top: 682px;
+}
+
+.about-restourent h1 {
+  font-size: 35px;
+  font-family: "Playfair Display";
+  color: #14141d;
+  font-weight: bold;
+  line-height: 0.629;
+  position: absolute;
+  left: 397.871px;
+  top: 881.493px;
+  z-index: 84;
+}
+
+.about-restourent p {
+  color: #5c6369;
+  line-height: 1.857;
+  position: absolute;
+  left: 397.994px;
+  top: 970.25px;
+  width: 543px;
+  height: 119px;
+  z-index: 77;
+}
+
+.about-restourent button {
+  color: white;
+  border-radius: 4px;
+  border-color: #fea100;
+  background-color: #fea100;
+  position: absolute;
+  left: 400px;
+  top: 1162px;
+  width: 149px;
+  height: 51px;
+  outline: 0;
+}
+/*# sourceMappingURL=style.css.map */

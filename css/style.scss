@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+$f-main: "Sintony";
+$fs-main: 14px;
+$b-main: rgb(254, 161, 0);
+%font-template {
+  font-size: 14px;
+  font-family: "Sintony";
+}
+
+nav {
+  a {
+    color: rgb(44, 70, 90);
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    font-family: $f-main;
+    font-weight: bold;
+    align-items: center;
+    z-index: 118;
+  }
+  li {
+    margin-left: 50px;
+  }
+}
+%article-tempalte {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  line-height: 0.75;
+  position: absolute;
+  z-index: 110;
+}
+.first-article {
+  @extend %article-tempalte;
+  top: 310.6px;
+  left: 400.563px;
+}
+
+.second-article {
+  top: 335.6px;
+  left: 405.563px;
+  @extend %article-tempalte;
+  span {
+    color: #fea100;
+  }
+}
+
+.top_button {
+  position: relative;
+  color: white;
+  border-color: $b-main;
+  border-radius: 4px;
+  background-color: $b-main;
+
+  font-size: $f-main;
+  font-family: $f-main;
+  line-height: 2.143;
+
+  width: 199px;
+  height: 47px;
+  padding-left: 20px;
+  margin-left: 140px;
+  background-image: url(../img/header/button/button_line.jpg);
+
+  outline: 0;
+  z-index: 124;
+}
+
+.small-image {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+}
+
+.below-banner {
+  background-color: #edf1f3;
+  width: 1970px;
+  height: 100px;
+  @extend %font-template;
+
+  img,
+  h3,
+  h4 {
+    position: absolute;
+  }
+
+  img {
+    left: 818.937px;
+    top: 706.247px;
+  }
+
+  h3,
+  h4,
+  h1 {
+    color: rgb(20, 20, 29);
+    font-weight: bold;
+    top: 685.247px;
+    left: 888.937px;
+  }
+
+  h3 {
+    top: 706.247px;
+    color: #fea100;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-family: "Playfair Display";
+    position: absolute;
+    left: 1070.084px;
+    top: 682px;
+  }
+}
+
