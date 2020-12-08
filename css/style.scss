@@ -118,3 +118,63 @@ nav {
   }
 }
 
+.about-restourent {
+  height: 550px;
+
+  h1 {
+    font-size: 35px;
+    font-family: "Playfair Display";
+    color: rgb(20, 20, 29);
+    font-weight: bold;
+    line-height: 0.629;
+    position: absolute;
+    left: 397.871px;
+    top: 881.493px;
+    z-index: 84;
+  }
+
+  p {
+    @extend %font-template;
+    color: rgb(92, 99, 105);
+    line-height: 1.857;
+    position: absolute;
+    left: 397.994px;
+    top: 970.25px;
+    width: 543px;
+    height: 119px;
+    z-index: 77;
+  }
+
+  button {
+    @extend %font-template;
+    color: white;
+    border-radius: 4px;
+    border-color: $b-main;
+    background-color: $b-main;
+    position: absolute;
+    left: 400px;
+    top: 1162px;
+    width: 149px;
+    height: 51px;
+    outline: 0;
+  }
+  #food1,#food2,#food3,#food4{
+    position: absolute;
+  }
+  #food1,#food2{
+    left: 1100px;
+    top:900px;
+  }
+  #food2{
+    top:1060px;
+  }
+  #food3,#food4{
+    left: 1400px;
+    top:850px;
+  }
+  #food4{
+    top:1010px;
+  }
+}
+
+

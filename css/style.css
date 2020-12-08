@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-.below-banner, .about-restourent p {
+.below-banner, .about-restourent p, .about-restourent button {
   font-size: 14px;
   font-family: "Sintony";
 }
@@ -117,6 +117,10 @@ nav li {
   top: 682px;
 }
 
+.about-restourent {
+  height: 550px;
+}
+
 .about-restourent h1 {
   font-size: 35px;
   font-family: "Playfair Display";
@@ -151,5 +155,27 @@ nav li {
   width: 149px;
   height: 51px;
   outline: 0;
+}
+
+.about-restourent #food1, .about-restourent #food2, .about-restourent #food3, .about-restourent #food4 {
+  position: absolute;
+}
+
+.about-restourent #food1, .about-restourent #food2 {
+  left: 1100px;
+  top: 900px;
+}
+
+.about-restourent #food2 {
+  top: 1060px;
+}
+
+.about-restourent #food3, .about-restourent #food4 {
+  left: 1400px;
+  top: 850px;
+}
+
+.about-restourent #food4 {
+  top: 1010px;
 }
 /*# sourceMappingURL=style.css.map */
