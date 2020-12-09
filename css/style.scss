@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  // width: 1400px;
 }
 $f-main: "Sintony";
 $fs-main: 14px;
@@ -18,8 +19,7 @@ nav {
   ul {
     display: flex;
     list-style: none;
-    font-size: 14px;
-    font-family: $f-main;
+    @extend %font-template;
     font-weight: bold;
     align-items: center;
     z-index: 118;
@@ -28,24 +28,22 @@ nav {
     margin-left: 50px;
   }
 }
-%article-tempalte {
-  font-size: 40px;
-  font-family: "Playfair Display", serif;
-  color: white;
-  line-height: 0.75;
-  position: absolute;
-  z-index: 110;
-}
+
 .first-article {
-  @extend %article-tempalte;
+  position: absolute;
   top: 310.6px;
   left: 400.563px;
 }
 
 .second-article {
+  position: absolute;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  line-height: 0.75;
+  z-index: 110;
   top: 335.6px;
   left: 405.563px;
-  @extend %article-tempalte;
   span {
     color: #fea100;
   }
@@ -53,15 +51,12 @@ nav {
 
 .top_button {
   position: relative;
+  @extend %font-template;
   color: white;
   border-color: $b-main;
   border-radius: 4px;
   background-color: $b-main;
-
-  font-size: $f-main;
-  font-family: $f-main;
   line-height: 2.143;
-
   width: 199px;
   height: 47px;
   padding-left: 20px;
@@ -79,42 +74,42 @@ nav {
 }
 
 .below-banner {
-  background-color: #edf1f3;
-  width: 1970px;
-  height: 100px;
   @extend %font-template;
+  position: relative;
+  background-color: #edf1f3;
+  height: 100px;
+  
+  img {
+    position: absolute;
+    left:37%;
+    top: 40%;
+  }
 
-  img,
-  h3,
+  h3
+  {
+    position: absolute;
+    font-weight: bold;
+    color: #fea100;
+    top: 50%;
+    left:40%;
+  }
   h4 {
     position: absolute;
+    font-weight: bold;
+    color: rgb(20, 20, 29);
+    left:40%;
+    top: 20%;
+   
   }
 
-  img {
-    left: 818.937px;
-    top: 706.247px;
-  }
-
-  h3,
-  h4,
   h1 {
+    position: absolute;
     color: rgb(20, 20, 29);
     font-weight: bold;
-    top: 685.247px;
-    left: 888.937px;
-  }
-
-  h3 {
-    top: 706.247px;
-    color: #fea100;
-  }
-
-  h1 {
     font-size: 32px;
     font-family: "Playfair Display";
-    position: absolute;
-    left: 1070.084px;
-    top: 682px;
+    top: 10%;
+    left:50%;
   }
 }
 
@@ -158,23 +153,149 @@ nav {
     height: 51px;
     outline: 0;
   }
-  #food1,#food2,#food3,#food4{
+  #food1,
+  #food2,
+  #food3,
+  #food4 {
     position: absolute;
   }
-  #food1,#food2{
+  #food1,
+  #food2 {
     left: 1100px;
-    top:900px;
+    top: 900px;
   }
-  #food2{
-    top:1060px;
+  #food2 {
+    top: 1060px;
   }
-  #food3,#food4{
+  #food3,
+  #food4 {
     left: 1400px;
-    top:850px;
+    top: 850px;
   }
-  #food4{
-    top:1010px;
+  #food4 {
+    top: 1010px;
   }
 }
 
+.today-special {
+  position: relative;
+  h1 {
+    position: absolute;
+    font-size: 35px;
+    font-family: "Playfair Display";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.629;
+    left: 880.078px;
+    top: 80px;
+    z-index: 66;
+  }
+}
 
+.white-box {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 24px 38px 0px rgba(0, 0, 0, 0.09);
+  position: absolute;
+
+  width: 569px;
+  height: 730px;
+
+  left: 400px;
+  top: 150px;
+  z-index: 48;
+
+  img {
+    position: absolute;
+  }
+  p {
+    text-align: center;
+    position: absolute;
+    left: 60.937px;
+    top: 500.002px;
+    @extend %font-template;
+    color: rgb(92, 99, 105);
+    line-height: 1.857;
+    width: 427px;
+    height: 67px;
+    z-index: 59;
+  }
+  h5 {
+    font-size: 13px;
+    font-family: "Sintony";
+    color: rgb(20, 20, 29);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.308;
+    position: absolute;
+    left: 50.938px;
+    top: 660.119px;
+    z-index: 52;
+    span {
+      color: #fe4c8d;
+    }
+  }
+  hr {
+    border: 1px solid rgb(225, 225, 225);
+    position: absolute;
+    left: 48px;
+    top: 654px;
+    width: 467px;
+    height: 0;
+    z-index: 50;
+  }
+  .vl {
+    border: 1px solid rgb(225, 225, 225);
+    position: absolute;
+    left: 120px;
+    top: 682px;
+    height: 33px;
+    z-index: 53;
+  }
+
+  .price {
+    font-size: 30px;
+    color: $b-main;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: super;
+    line-height: 0.733;
+    position: absolute;
+    left: 370px;
+    top: 662px;
+    z-index: 57;
+    span {
+      font-size: 15px;
+      font-family: "Playfair Display";
+      vertical-align: top;
+    }
+  }
+
+  .phone-number {
+    font-size: 26px;
+    font-family: "Playfair Display";
+    color: rgb(20, 20, 29);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.846;
+    position: absolute;
+    left: 140px;
+    top: 660.119px;
+    z-index: 54;
+  }
+}
+.food-name {
+  position: absolute;
+  font-size: 26px;
+  font-family: "Playfair Display";
+  color: rgb(20, 20, 29);
+  font-weight: bold;
+  line-height: 0.846;
+  left: 210.937px;
+  top: 450.002px;
+}
+
+.white-box-bg {
+  left: 1005px;
+  top: 150px;
+  z-index: 29;
+}

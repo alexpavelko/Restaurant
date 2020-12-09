@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-.below-banner, .about-restourent p, .about-restourent button {
+nav ul, .top_button, .below-banner, .about-restourent p, .about-restourent button, .white-box p {
   font-size: 14px;
   font-family: "Sintony";
 }
@@ -18,8 +18,6 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  font-size: 14px;
-  font-family: "Sintony";
   font-weight: bold;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -31,21 +29,19 @@ nav li {
   margin-left: 50px;
 }
 
-.first-article, .second-article {
-  font-size: 40px;
-  font-family: "Playfair Display", serif;
-  color: white;
-  line-height: 0.75;
-  position: absolute;
-  z-index: 110;
-}
-
 .first-article {
+  position: absolute;
   top: 310.6px;
   left: 400.563px;
 }
 
 .second-article {
+  position: absolute;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  color: white;
+  line-height: 0.75;
+  z-index: 110;
   top: 335.6px;
   left: 405.563px;
 }
@@ -60,8 +56,6 @@ nav li {
   border-color: #fea100;
   border-radius: 4px;
   background-color: #fea100;
-  font-size: "Sintony";
-  font-family: "Sintony";
   line-height: 2.143;
   width: 199px;
   height: 47px;
@@ -79,42 +73,41 @@ nav li {
 }
 
 .below-banner {
+  position: relative;
   background-color: #edf1f3;
-  width: 1970px;
   height: 100px;
 }
 
-.below-banner img,
-.below-banner h3,
-.below-banner h4 {
-  position: absolute;
-}
-
 .below-banner img {
-  left: 818.937px;
-  top: 706.247px;
-}
-
-.below-banner h3,
-.below-banner h4,
-.below-banner h1 {
-  color: #14141d;
-  font-weight: bold;
-  top: 685.247px;
-  left: 888.937px;
+  position: absolute;
+  left: 37%;
+  top: 40%;
 }
 
 .below-banner h3 {
-  top: 706.247px;
+  position: absolute;
+  font-weight: bold;
   color: #fea100;
+  top: 50%;
+  left: 40%;
+}
+
+.below-banner h4 {
+  position: absolute;
+  font-weight: bold;
+  color: #14141d;
+  left: 40%;
+  top: 20%;
 }
 
 .below-banner h1 {
+  position: absolute;
+  color: #14141d;
+  font-weight: bold;
   font-size: 32px;
   font-family: "Playfair Display";
-  position: absolute;
-  left: 1070.084px;
-  top: 682px;
+  top: 10%;
+  left: 50%;
 }
 
 .about-restourent {
@@ -157,11 +150,15 @@ nav li {
   outline: 0;
 }
 
-.about-restourent #food1, .about-restourent #food2, .about-restourent #food3, .about-restourent #food4 {
+.about-restourent #food1,
+.about-restourent #food2,
+.about-restourent #food3,
+.about-restourent #food4 {
   position: absolute;
 }
 
-.about-restourent #food1, .about-restourent #food2 {
+.about-restourent #food1,
+.about-restourent #food2 {
   left: 1100px;
   top: 900px;
 }
@@ -170,12 +167,142 @@ nav li {
   top: 1060px;
 }
 
-.about-restourent #food3, .about-restourent #food4 {
+.about-restourent #food3,
+.about-restourent #food4 {
   left: 1400px;
   top: 850px;
 }
 
 .about-restourent #food4 {
   top: 1010px;
+}
+
+.today-special {
+  position: relative;
+}
+
+.today-special h1 {
+  position: absolute;
+  font-size: 35px;
+  font-family: "Playfair Display";
+  color: white;
+  font-weight: bold;
+  line-height: 0.629;
+  left: 880.078px;
+  top: 80px;
+  z-index: 66;
+}
+
+.white-box {
+  background-color: white;
+  -webkit-box-shadow: 0px 24px 38px 0px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 24px 38px 0px rgba(0, 0, 0, 0.09);
+  position: absolute;
+  width: 569px;
+  height: 730px;
+  left: 400px;
+  top: 150px;
+  z-index: 48;
+}
+
+.white-box img {
+  position: absolute;
+}
+
+.white-box p {
+  text-align: center;
+  position: absolute;
+  left: 60.937px;
+  top: 500.002px;
+  color: #5c6369;
+  line-height: 1.857;
+  width: 427px;
+  height: 67px;
+  z-index: 59;
+}
+
+.white-box h5 {
+  font-size: 13px;
+  font-family: "Sintony";
+  color: #14141d;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.308;
+  position: absolute;
+  left: 50.938px;
+  top: 660.119px;
+  z-index: 52;
+}
+
+.white-box h5 span {
+  color: #fe4c8d;
+}
+
+.white-box hr {
+  border: 1px solid #e1e1e1;
+  position: absolute;
+  left: 48px;
+  top: 654px;
+  width: 467px;
+  height: 0;
+  z-index: 50;
+}
+
+.white-box .vl {
+  border: 1px solid #e1e1e1;
+  position: absolute;
+  left: 120px;
+  top: 682px;
+  height: 33px;
+  z-index: 53;
+}
+
+.white-box .price {
+  font-size: 30px;
+  color: #fea100;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: super;
+  line-height: 0.733;
+  position: absolute;
+  left: 370px;
+  top: 662px;
+  z-index: 57;
+}
+
+.white-box .price span {
+  font-size: 15px;
+  font-family: "Playfair Display";
+  vertical-align: top;
+}
+
+.white-box .phone-number {
+  font-size: 26px;
+  font-family: "Playfair Display";
+  color: #14141d;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.846;
+  position: absolute;
+  left: 140px;
+  top: 660.119px;
+  z-index: 54;
+}
+
+.food-name {
+  position: absolute;
+  font-size: 26px;
+  font-family: "Playfair Display";
+  color: #14141d;
+  font-weight: bold;
+  line-height: 0.846;
+  left: 210.937px;
+  top: 450.002px;
+}
+
+.white-box-bg {
+  left: 1005px;
+  top: 150px;
+  z-index: 29;
 }
 /*# sourceMappingURL=style.css.map */
